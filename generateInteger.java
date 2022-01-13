@@ -74,15 +74,15 @@ public class generateInteger {
         for(int i = 0; i < arr.length; i++){
             if(arr.length > 0){
                 arr[i] = 0;
-            }
+           }
         }
-        size = arr.length;
+        size = 0;
         System.out.println(Arrays.toString(arr));
-        System.out.println("removed array length is " + arr.length);
+        System.out.println("removed array length is " + size);
     }
     // d) find the size of  the array
     public int size(){
-        return arr.length;
+        return size;
     }
 
     // e) Getting the value by index

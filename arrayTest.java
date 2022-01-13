@@ -2,7 +2,7 @@ package DS_assignment3;
 
 import java.util.Arrays;
 
-public class Main {
+public class arrayTest {
 
     public static void main(String[] args) {
 
@@ -10,9 +10,9 @@ public class Main {
         number.insert();
         number.removeDuplicates();
         System.out.println("Updated number " + number.set(3,11));
-        System.out.println("The subList " + Arrays.toString(number.subList(2,25)));
+        System.out.println("The subList array" + Arrays.toString(number.subList(2,25)));
         System.out.println("The current size " +number.size()); //?
-        System.out.println("Given index hold this # " + number.get(0));
+        System.out.println("Given index hold this number " + number.get(0));
         number.clear();
     }
 }

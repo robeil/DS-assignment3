@@ -6,6 +6,7 @@ public class Student {
     private String name;
     private int mark;
 
+    //Constructor to initialize the value
     public Student(int id, String name, int mark) {
         this.id = id;
         this.name = name;
