@@ -39,5 +39,8 @@ public class Marketing {
         this.salesAmount = salesAmount;
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
