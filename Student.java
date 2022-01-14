@@ -6,6 +6,10 @@ public class Student {
     private String name;
     private int mark;
 
+    //empty constructor
+    public Student(){
+
+    }
     //Constructor to initialize the value
     public Student(int id, String name, int mark) {
         this.id = id;
@@ -13,11 +17,44 @@ public class Student {
         this.mark = mark;
     }
 
-    public void displayStudent(){
-
-    }
-
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMark() {
+        return mark;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
+    }
+
+    //display student
+    public void displayStudent(){
+    //     for(int i = 0; i < students.length; i++){
+    //         System.out.println(toString());
+    //     }
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", mark=" + mark +
+                '}';
     }
 }

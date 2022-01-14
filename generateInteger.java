@@ -1,7 +1,6 @@
 package DS_assignment3;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Random;
 
 public class generateInteger {
@@ -31,7 +30,7 @@ public class generateInteger {
     }
 
     // b) Remove duplicated number from the array
-    public   void removeDuplicates(){
+    public void removeDuplicates(){
         int count = 0;
         //checking every element if they are the same
         for(int i = 1; i < arr.length; i++){
@@ -70,15 +69,17 @@ public class generateInteger {
     }
     // c) Remove all the elements from the array
     public void clear(){
+        int length = arr.length;
         //looping the array and turning the element value to 0
-        for(int i = 0; i < arr.length; i++){
+        for(int i = 0; i < length; i++){
             if(arr.length > 0){
                 arr[i] = 0;
            }
+           length = 0;
         }
-        size = 0;
-        System.out.println(Arrays.toString(arr));
-        System.out.println("removed array length is " + size);
+
+        size = length;
+        System.out.println("Length of the array after removeAll " + size);
     }
     // d) find the size of  the array
     public int size(){
@@ -112,7 +113,7 @@ public class generateInteger {
     }
 
     // g) Updating the new value using index
-    public int set(int index,  int newValue){
+    public int set(int index, int newValue){
 
         //validating the user input
         if(index < 0 || index >= size)
