@@ -43,18 +43,22 @@ public class StudentArray<E> {
     public boolean delete(int id){
     //checking if the id exist then delete
         Student temp = null;
+        boolean isDeleted = false;
+
        for(int i = 0; i < nElems; i++){
            if(a[i].getId() == id){
               temp = a[i];
+              //isDeleted = true;
            }
 
             //shifting the element
-            for (int j = id +1; j < nElems; j++) {
+            for (int j = i +1; j < nElems; j++) {
                 a[j-1] = a[j];
+                isDeleted = true;
             }
         }
             nElems--;
-        return true;
+        return isDeleted;
     }
 
     //Displays array contents
@@ -63,6 +67,30 @@ public class StudentArray<E> {
         for (int i = 0; i < nElems; i++) {
             System.out.println(a[i]);
         }
+    }
+   // finding Student with maximum mark
+    public Student maxMark(){
+        Student maxStu = a[0];
+
+        for(int i = 0; i < nElems; i++){
+            if(a[i].getMark() > maxStu.getMark()){
+               maxStu = a[i];
+            }
+        }
+        return maxStu;
+    }
+
+    //finding Student with minimum mark
+    public Student minMark(){
+        Student minStu = a[0];
+
+        for(int i = 0; i < nElems; i++){
+            if(a[i].getMark() < minStu.getMark()) {
+                minStu = a[i];
+            }
+        }
+        return minStu;
+
     }
 
     @Override

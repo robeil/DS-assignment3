@@ -12,10 +12,19 @@ public class studentTest {
         studentArray.insert(4,"Keleab",12);
 
         System.out.println("-------------");
+        System.out.println("Student with maximum mark");
+        System.out.println(studentArray.maxMark());
+
+        System.out.println("-------------");
+
+        System.out.println("Student with maximum mark");
+        System.out.println(studentArray.minMark());
+
+        System.out.println("-------------");
         studentArray.displayAll();
         System.out.println("-------------");
         System.out.println("Found by ID "+studentArray.find(1));
-        System.out.println("Deleted : "+ studentArray.delete(1));
+        System.out.println("Deleted : "+ studentArray.delete(4));
         System.out.println("-------------");
         studentArray.displayAll();
         System.out.println("-------------");
