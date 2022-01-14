@@ -42,15 +42,18 @@ public class StudentArray<E> {
     //Delete student from the array
     public boolean delete(int id){
     //checking if the id exist then delete
-        if(find(id).equals(id)) {
-           //Student find(id) = 0; // FIXME ----> ???????????
+        Student temp = null;
+       for(int i = 0; i < nElems; i++){
+           if(a[i].getId() == id){
+              temp = a[i];
+           }
+
             //shifting the element
-            for (int i = id +1; i < nElems; i++) {
-                a[i-1] = a[i];
+            for (int j = id +1; j < nElems; j++) {
+                a[j-1] = a[j];
             }
         }
             nElems--;
-        //System.out.println("Should be deleted " +find(id));
         return true;
     }
 

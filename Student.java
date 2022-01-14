@@ -43,7 +43,7 @@ public class Student {
 
     //display student
     public void displayStudent(){
-    //     for(int i = 0; i < students.length; i++){
+    //     for(int i = 0; i < students.length; i++){ /// FIXME -->
     //         System.out.println(toString());
     //     }
         System.out.println(toString());

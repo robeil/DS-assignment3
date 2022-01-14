@@ -15,11 +15,10 @@ public class studentTest {
         studentArray.displayAll();
         System.out.println("-------------");
         System.out.println("Found by ID "+studentArray.find(1));
-        System.out.println("Deleted : "+ studentArray.delete(3) + " FIXME ??????????"); //FIXME ------>
+        System.out.println("Deleted : "+ studentArray.delete(1));
         System.out.println("-------------");
         studentArray.displayAll();
         System.out.println("-------------");
-
 
     }
 }
