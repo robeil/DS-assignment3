@@ -50,7 +50,6 @@ public class StudentArray<E> {
               temp = a[i];
               //isDeleted = true;
            }
-
             //shifting the element
             for (int j = i +1; j < nElems; j++) {
                 a[j-1] = a[j];
@@ -71,7 +70,7 @@ public class StudentArray<E> {
    // finding Student with maximum mark
     public Student maxMark(){
         Student maxStu = a[0];
-
+        //finding the maximum mark
         for(int i = 0; i < nElems; i++){
             if(a[i].getMark() > maxStu.getMark()){
                maxStu = a[i];
@@ -83,7 +82,7 @@ public class StudentArray<E> {
     //finding Student with minimum mark
     public Student minMark(){
         Student minStu = a[0];
-
+        //finding the minimum mark
         for(int i = 0; i < nElems; i++){
             if(a[i].getMark() < minStu.getMark()) {
                 minStu = a[i];

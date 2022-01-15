@@ -10,7 +10,7 @@ public class arrayTest {
 
         number.insert();
         number.removeDuplicates();
-        System.out.println("Updated number " + number.set(3,11));
+        System.out.println("Updated : " + number.set(3,11));
         System.out.println("The subList array" + Arrays.toString(number.subList(2,25)));
         System.out.println("The current size " +number.size());
         System.out.println("Given index hold this number " + number.get(0));

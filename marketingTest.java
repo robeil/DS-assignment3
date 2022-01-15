@@ -1,14 +1,16 @@
 package DS_assignment3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
+import java.util.List;
 
 public class marketingTest {
 
     public static void main(String[] args) {
 
         //creating marketing array
-        ArrayList<Marketing> marketList = new ArrayList();
+        List<Marketing> marketList = new ArrayList<>();
+
         //creating marketing object
         marketList.add(new Marketing("Merhawi","ProApp",3625));
         marketList.add(new Marketing("Robeil","BestApp",2514));
